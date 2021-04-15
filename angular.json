@@ -25,7 +25,9 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/OneSignalSDKUpdaterWorker.js",
+              "src/OneSignalSDKWorker.js",
             ],
             "styles": [
               "src/styles.scss"
