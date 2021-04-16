@@ -12,19 +12,20 @@ export class AppComponent implements OnInit {
   title = 'OneSignal-Angular';
   OneSignal = null;
   constructor(private os: OneSignalService){
-   
   }
   ngOnInit() { 
-    this.os.init().then(()=> {
-      this.OneSignal = this.os.getOneSignal();
-    });
+    this.os.getInstance().then((OS)=>{
+      this.OneSignal = OS;
+      this.OneSignal.init({
+        appId: "8b210209-7548-4b39-84d1-07b037263557",
+      });
+    })
   }
-  onSendTags() {
-    console.log(this.OneSignal);
+  onSendTags(){
     this.OneSignal.sendTags({
         react: 'value',
       }, function(tagsSent) {
         console.log(tagsSent);
-    });   
+      });
   }
 }
