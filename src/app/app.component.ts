@@ -11,16 +11,16 @@ import { OneSignalService } from './one-signal.service';
 export class AppComponent implements OnInit {
   title = 'OneSignal-Angular';
   OneSignal = null;
-  constructor(private os: OneSignalService){
+  constructor(private oneSignal: OneSignalService){
+    oneSignal.onInit();
   }
+
   ngOnInit() { 
-    this.os.getInstance().then((OS)=>{
+    this.oneSignal.objOneSignal.subscribe((OS)=>{
       this.OneSignal = OS;
-      this.OneSignal.init({
-        appId: "8b210209-7548-4b39-84d1-07b037263557",
-      });
     })
   }
+
   onSendTags(){
     this.OneSignal.sendTags({
         react: 'value',
@@ -29,3 +29,4 @@ export class AppComponent implements OnInit {
       });
   }
 }
+
