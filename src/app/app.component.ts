@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { OneSignalService } from './one-signal.service';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -10,23 +9,11 @@ import { OneSignalService } from './one-signal.service';
 
 export class AppComponent implements OnInit {
   title = 'OneSignal-Angular';
-  OneSignal = null;
-  constructor(private oneSignal: OneSignalService){
-    oneSignal.onInit();
-  }
 
-  ngOnInit() { 
-    this.oneSignal.objOneSignal.subscribe((OS)=>{
-      this.OneSignal = OS;
-    })
-  }
+  constructor(){}
+  
+  ngOnInit() {
 
-  onSendTags(){
-    this.OneSignal.sendTags({
-        react: 'value',
-      }, function(tagsSent) {
-        console.log(tagsSent);
-      });
   }
 }
 
