@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OneSignalService } from './one-signal.service';
 
 
 @Component({
@@ -11,7 +10,7 @@ import { OneSignalService } from './one-signal.service';
 export class AppComponent implements OnInit {
   title = 'OneSignal-Angular';
 
-  constructor(private os: OneSignalService){}
+  constructor(){}
   
   ngOnInit() { 
     
