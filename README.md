@@ -85,7 +85,7 @@ The code above will allow us to make use of `window.OneSignal` object without ha
 ```javascript
  import 'globals';
 ```
-Time to create our OneSignal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that our SDK script we added inside of the *index.html* has been loaded since it{s an async operation.
+Time to create our OneSignal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that our SDK script we added inside of the *index.html* has been loaded since it's an async operation.
 
 ```javascript
 async onLoad(): Promise<any> {
