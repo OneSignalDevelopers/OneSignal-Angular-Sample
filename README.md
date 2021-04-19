@@ -1,9 +1,9 @@
 ## Push Notification Integration In Angular
 
 Notes: 
--This tutorial requires some basic knowledge on Angular
--I´m using Angular 11.2
--NodeJS version 14.0
+* This tutorial requires some basic knowledge on Angular
+* I´m using Angular 11.2
+* NodeJS version 14.0
 
 Repo:
 
