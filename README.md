@@ -1,7 +1,7 @@
 ## Push Notification Integration In Angular
 
 Notes:
-* Create a FREE (OneSignal)[https://onesignal.com/] account 
+* Create a FREE [OneSignal](https://onesignal.com/) account 
 * Follow the steps of the  [Typical setup](https://documentation.onesignal.com/docs/web-push-typical-setup)
 * This tutorial requires some basic knowledge on Angular
 * Angular 11.2.9
