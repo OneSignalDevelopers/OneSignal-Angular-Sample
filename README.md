@@ -89,7 +89,7 @@ Inside of you *index.html* file, get rid of this code:
 ```
 }
 
-In your root folder, create a new file called *grobals.ts*. I this file you will insert the following code:
+In your root folder, create a new file called *globals.ts*. I this file you will insert the following code:
 
 ``` javascript
 export{}
@@ -101,7 +101,7 @@ declare global {
 }
 ```
 
-The code above will allow us to make use of `window.OneSignal` object without having to see any TS and compiler errors. Now that you have the globals.ts file created, import it into your *polyfills.ts* file.
+The code above will allow us to make use of `window.OneSignal` object without having to see any TS and compiler errors. Now that you have the *globals.ts* file created, import it into your *polyfills.ts* file.
 
 ```javascript
  import 'globals';
