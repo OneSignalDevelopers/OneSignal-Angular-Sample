@@ -1,8 +1,4 @@
-# OneSignalAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
-
-## Push Notification Integreation In Angular
+## Push Notification Integration In Angular
 
 Notes: 
 -This tutorial requires some basic knowledge on Angular
@@ -64,19 +60,19 @@ It{s time to send a Push Notification to the users of our application, to do so,
 
 ![New Push OneSignal](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/e9h04k54vh2mhu865kt6.png)
 
-You will be redirected to a new page that will allow you to change the configuration of your Push Notification. Make sure in the Audice step, "Send to Subscribed Users" is selected. On the second step, make sure to enter the required fields. On the third step the options "Immidiatly" and "Send to everyone at the same time" are selected. Finally, at the very bottom, click on the blue button that says "Review and Send".
+You will be redirected to a new page that will allow you to change the configuration of your Push Notification. Make sure in the Audience step, "Send to Subscribed Users" is selected. On the second step, make sure to enter the required fields. On the third step the options "Immediately" and "Send to everyone at the same time" are selected. Finally, at the very bottom, click on the blue button that says "Review and Send".
 
 ![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c9w9f7pbhd45m2lpnwf5.png)
 
 Time to review, a small popup will appear for you to review the message. After you have reviewed the message, click on the blue button "Send Message"
 
-**You should have recieved a Push Notification in your device 🚀**
+**You should have received a Push Notification in your device 🚀**
 
 ### Advance Push Notification Setup In Angular
 
-If want to take the Push Notifications to the next level and have the ability to use OneSignal across you entire Angular app, I will show you how do so.
+If you want to take the Push Notifications to the next level and have the ability to use OneSignal across your entire Angular app, I will show you how to do so.
 
-*Note: If you havent completed the Quick Push Notification Setup, please make sure to do so.*
+*Note: If you haven't completed the Quick Push Notification Setup, please make sure to do so.*
 
 Inside of you *index.html* file, get rid of this code:
 
@@ -110,7 +106,7 @@ The code above will allow us to make use of `window.OneSignal` object without ha
 ```javascript
  import 'globals';
 ```
-Time to create our OneSingal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that our SDK script we added inside of the *index.html* has been loaded since it{s an async operation.
+Time to create our OneSignal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that our SDK script we added inside of the *index.html* has been loaded since it{s an async operation.
 
 ```javascript
 async onLoad(): Promise<any> {
@@ -159,5 +155,4 @@ export class AppComponent implements OnInit {
 }
 ```
 
-Now, you can keep exapanding your code to make use of different features of the OneSignal SDK across your Angular app. To learn more about the Web Push SDK visit the[ OneSingal docs](https://documentation.onesignal.com/docs/web-push-sdk).
-
+Now, you can keep expanding your code to make use of different features of the OneSignal SDK across your Angular app. To learn more about the Web Push SDK visit the[ OneSignal docs](https://documentation.onesignal.com/docs/web-push-sdk).
