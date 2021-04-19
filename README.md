@@ -48,7 +48,7 @@ You angular.json should look like this:
 ...
 ```
 
-### Advance Push Notification Setup In Angular
+### Advanced Push Notification Setup In Angular
 
 If you want to take the Push Notifications to the next level and have the ability to use OneSignal across your entire Angular app, I will show you how to do so.
 
