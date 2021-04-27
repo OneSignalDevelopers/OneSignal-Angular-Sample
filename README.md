@@ -12,12 +12,12 @@ Repo:
 * [Quick setup](https://github.com/OneSignal/OneSignal-Angular)
 * [Advanced setup](https://github.com/OneSignal/OneSignal-Angular/tree/FINAL-CODE)
 
-**Create a new Angular project project using the Angular CLI**
+**Create a new Angular project using the Angular CLI**
 
 
 ### Quick Push Notification Setup In Angular
 
-In your project folder, navigate to the *index.html* file and inside of the **head** html tag, paste the following code and add your own app id.
+In your project folder, navigate to the *index.html* file, and inside of the **head** HTML tag, paste the following code and add your app id.
 
 ```html
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
@@ -36,7 +36,7 @@ Now, [download the SDK files](https://github.com/OneSignal/OneSignal-Website-SDK
 
 After you have inserted the SDK files into your Angular project, we need to make Angular aware of those SDK files. Open the *angular.json* file and locate the architecture property and inside of that property you will see another property called assets, at the bottom of the property add the location of the OneSignal SDKs.
 
-You angular.json should look like this:
+Your angular.json should look like this:
 ```javascript
 ...
 "assets": [
@@ -85,7 +85,7 @@ The code above will allow us to make use of `window.OneSignal` object without ha
 ```javascript
  import 'globals';
 ```
-Time to create our OneSignal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that our SDK script we added inside of the *index.html* has been loaded since it{s an async operation.
+Time to create our OneSignal service inside of our Angular app. I have created one using the Angular CLI. The name of my service file is *one-signal.service.ts*. After creating the service, you will create an `onLoad()` method that will ensure that the SDK script we added inside of the *index.html* has been loaded since it{s an async operation.
 
 ```javascript
 async onLoad(): Promise<any> {
@@ -135,3 +135,4 @@ export class AppComponent implements OnInit {
 ```
 
 Now, you can keep expanding your code to make use of different features of the OneSignal SDK across your Angular app. To learn more about the Web Push SDK visit the[ OneSignal docs](https://documentation.onesignal.com/docs/web-push-sdk).
+
