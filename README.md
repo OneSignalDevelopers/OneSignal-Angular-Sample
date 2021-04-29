@@ -11,6 +11,8 @@ Repo:
  
 * [Quick setup](https://github.com/OneSignal/OneSignal-Angular)
 * [Advanced setup](https://github.com/OneSignal/OneSignal-Angular/tree/FINAL-CODE)
+
+***[Live Demo](https://onesignal-angular-devrel.web.app/)***
  
 **Create a new Angular project using the Angular CLI**
  
