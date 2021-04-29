@@ -14,6 +14,6 @@ export class AppComponent implements OnInit {
   constructor(private os: OneSignalService){}
   
   ngOnInit() { 
-    
+    this.os.onInit();
   }
 }
