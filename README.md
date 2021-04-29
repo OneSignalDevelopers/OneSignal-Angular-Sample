@@ -133,5 +133,5 @@ export class AppComponent implements OnInit {
   }
 }
 ```
- 
+
 Now, you can keep expanding your code to make use of different features of the OneSignal SDK across your Angular app. To learn more about the Web Push SDK visit the[ OneSignal docs](https://documentation.onesignal.com/docs/web-push-sdk).
