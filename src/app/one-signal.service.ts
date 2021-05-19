@@ -5,8 +5,5 @@ import { BehaviorSubject, from, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class OneSignalService {
-  private OneSignal = new BehaviorSubject<any>(null);
-  objOneSignal = this.OneSignal.asObservable();
-
   constructor() {}
 }
